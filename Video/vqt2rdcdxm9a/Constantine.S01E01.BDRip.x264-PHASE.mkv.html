@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
+    <a class="navbar-brand" href="index.html">Supernatural</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item {{home}}">
+          <a class="nav-link" href="file:///C:/Users/zocke/Documents/My%20Website/indexplushbs.html">Home</a>
+        </li>
+        <li class="nav-item {{demoElements}}">
+          <a class="nav-link" href="file:///C:/Users/zocke/Documents/My%20Website/video/vqt2rdcdxm9a/Constantine.S01E01.BDRip.x264-PHASE.mkv.html">Video</a>
+        </li>
+        <li class="nav-item {{stickyFooter}}">
+          <a class="nav-link" href="stickyFooter.html">Sticky footer</a>
+        </li>
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Character
+           </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+            <button class="dropdown-item" type="button"><a href="http://de.supernatural.wikia.com/wiki/Dean_Winchester">Humans: Dean Whinchester</a></button>
+            <button class="dropdown-item" type="button"><a href="http://de.supernatural.wikia.com/wiki/Sam_Winchester">------------ Sam Whinchester</a></button>
+            <button class="dropdown-item" type="button"><a href="http://de.supernatural.wikia.com/wiki/Bobby_Singer">------------ Bobby Singer</a></button>
+            <button class="dropdown-item" type="button"><a href="http://de.supernatural.wikia.com/wiki/John_Winchester">------------ John Whinchester</a></button>
+            <button class="dropdown-item" type="button"><a href="http://de.supernatural.wikia.com/wiki/Mary_Winchester">------------ Mary Whinchester</a></button>
+            <button class="dropdown-item" type="button"><a href="http://de.supernatural.wikia.com/wiki/Charlie_Bradbury">------------ Charlie Bradbury</a></button>
+            <button class="dropdown-item" type="button"><a href="http://de.supernatural.wikia.com/wiki/Kevin_Tran">------------ Kevin Tran</a></button>
+            <button class="dropdown-item" type="button"><a href="http://de.supernatural.wikia.com/wiki/Jo_Harvelle">------------ Jo Harvelle</a></button>
+            <button class="dropdown-item" type="button"><a href="http://de.supernatural.wikia.com/wiki/Ellen_Harvelle">------------ Ellen Harvelle</a></button>
+            <button class="dropdown-item" type="button"><a href="http://de.supernatural.wikia.com/wiki/Rowena">------------ Rowana</a></button>
+            <div class="dropdown-divider"></div>
+            <button class="dropdown-item" type="button"><a href="http://de.supernatural.wikia.com/wiki/Crowley">Demons: Crowly</a></button>
+            <button class="dropdown-item" type="button"><a href="http://de.supernatural.wikia.com/wiki/Lilith">------------ Lilith</a></button>
+            <div class="dropdown-divider"></div>
+            <button class="dropdown-item" type="button"><a href="http://de.supernatural.wikia.com/wiki/Castiel">Angels : Castiel</a></button>
+          </div>
+        </div>
+    </div>
+  </nav>
+
+  <div class="standout" id="player_code">
+    <div id='mediaplayer' class="video">&nbsp;</div>
+    <script type='text/javascript' src='http://streamcloud.eu/player/jwplayer.js?v=4'></script>
+    <script type="text/javascript">
+      jwplayer.key = 'yFw9/HBdTuNRkDKVE1SHdAzBKcLYzatF36+Tuw==';
+    </script>
+    <script type='text/javascript'>
+      jwplayer("mediaplayer").setup({
+        provider: "http",
+        flashplayer: "http://streamcloud.eu/player/player.swf",
+        file: "https://1fjiw69.oloadcdn.net/dl/l/oMQUbCuelgTQ4fhk/QutGS5JNULk/DCs.Legends.of.Tomorrow.S03E10.HDTV.x264-BATV.mkv.mp4",
+        image: "https://occ-0-901-444.1.nflxso.net/art/cd1d1/be9043a1d76886ac251bc182a24e2454f95cd1d1.jpg",
+        height: 537,
+        width: 890,
+        abouttext: "Help",
+        aboutlink: "http://streamcloud.eu//playerhelp.html",
+        startparam: "start",
+
+      });
+
+      (function($) {
+        jwplayer().onBeforePlay(function(x) {
+          $.ajax({
+            type: "GET",
+            url: "http://meta.streamcloud.eu/8683137/debb6cddfddb1f0d2368e958424aa8b5/"
+          });
+        });
+
+        jwplayer().onReady(function(x) {
+          $('li#' + jwplayer().getRenderingMode()).addClass('active');
+        });
+      })(jQuery);
+    </script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    </body>
+
+</html>

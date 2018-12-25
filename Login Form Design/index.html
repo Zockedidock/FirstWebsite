@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>Login Form Design</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+<body>
+    <div class="loginbox">
+    <img src="avatar.jpg" class="avatar">
+        <h1>Login Here</h1>
+        <form>
+            <p>Username</p>
+            <input type="text"  name="userid" placeholder="Enter Username">
+            <p>Password</p>
+            <input type="password" name="pswrd" placeholder="Enter Password">
+            <input type="submit" onclick="check(this.form)"  value="Login">
+            <a href="#">Lost your password?</a><br>
+            <a href="#">Don't have an account?</a>
+        </form>
+        
+    </div>
+    <script language="javascript">
+        function check(form)
+        {
+         
+         if(form.userid.value == "GermanLetzPloy" && form.pswrd.value == "lleeggoo")
+          {
+            window.open('localhost:3000')
+          }
+         else
+         {
+           alert("Wrong password or username")
+          }
+        }
+        </script>
+</body>
+</head>
+</html>
